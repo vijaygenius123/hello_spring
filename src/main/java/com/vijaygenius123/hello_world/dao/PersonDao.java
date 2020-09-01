@@ -3,6 +3,7 @@ package com.vijaygenius123.hello_world.dao;
 import com.vijaygenius123.hello_world.model.Person;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 public interface PersonDao {
@@ -15,4 +16,6 @@ public interface PersonDao {
     }
 
     List<Person> selectAll();
+
+    Optional<Person> selectPersonById(UUID id);
 }
